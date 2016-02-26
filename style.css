@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'), url(Roboto.woff2) format('woff2');
+    unicode-range: U+0000-00FF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+input,
+button {
+    height: 25vh;
+    font-size: 1em;
+    font: inherit;
+    border: 0;
+}
+*:focus {
+    outline: 0;
+}
+input {
+    width: 100vw;
+    background: white;
+    padding: 0 10px;
+    display: block;
+}
+#message {
+    position: absolute;
+    z-index: -10;
+    top: 50vh;
+}
+button {
+    color: white;
+    margin-right: -4px;
+    width: 50vw;
+    display: inline-block;
+}
+button#commit {
+    background: #03A9F4;
+}
+button#pull {
+    background: #4CAF50;
+}

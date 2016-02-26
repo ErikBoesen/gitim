@@ -4,19 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>gitim</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello World!</h1> We are using node
-    <script>
-        document.write(process.versions.node)
-    </script>, Chrome
-    <script>
-        document.write(process.versions.chrome)
-    </script>, and Electron
-    <script>
-        document.write(process.versions.electron)
-    </script>.
+    <input type="text" id="url" placeholder="Repo URL" value="github.com/name/repository">
+    <input type="text" id="path" placeholder="Path" value="~/Desktop/repository">
+    <input type="text" id="message" placeholder="Type commit message:">
+    <button id="commit">Commit</button>
+    <button id="pull">Pull</button>
 </body>
 
 </html>
