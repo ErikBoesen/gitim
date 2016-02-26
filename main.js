@@ -1,3 +1,5 @@
+'use strict';
+
 const electron = require('electron');
 // Module to control application life.
 const app = electron.app;
@@ -47,6 +49,3 @@ app.on('activate', function() {
 		createWindow();
 	}
 });
-
-
-// App scripts! May need to be moved.

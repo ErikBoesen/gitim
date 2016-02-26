@@ -20,7 +20,8 @@ button {
     font: inherit;
     border: 0;
 }
-*:focus {
+input:focus,
+button:focus {
     outline: 0;
 }
 input {
@@ -33,16 +34,39 @@ input {
     position: absolute;
     z-index: -10;
     top: 50vh;
+    width: 60vw;
+    right: 20vw;
 }
 button {
     color: white;
-    margin-right: -4px;
     width: 50vw;
     display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    transition: .5s ease-out;
+}
+button.active {
+    transition: .5s ease-out;
 }
 button#commit {
     background: #03A9F4;
+    top: 50vh;
+    right: 0;
+    z-index: 5;
+}
+button#commit.active {
+    width: 20vw;
 }
 button#pull {
     background: #4CAF50;
+    top: 50vh;
+    left: 0;
+}
+button#pull.active {
+    left: 0;
+    right: 90vw;
+    width: 20vw;
+    background: #ddd;
+    color: black;
+    content: 'Cancel';
 }

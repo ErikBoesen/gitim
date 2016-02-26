@@ -1,28 +1,32 @@
 {
-	"name": "gitim",
-	"version": "0.1",
-	"description": "A minimal, lightweight git client.",
-	"main": "main.js",
-	"scripts": {
-		"start": "electron main.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ErikBoesen/gitim.git"
-	},
-	"keywords": [
-		"gitim",
-		"git",
-		"git client",
-		"github"
-	],
-	"author": "ErikBoesen",
-	"license": "CC0-1.0",
-	"bugs": {
-		"url": "https://github.com/ErikBoesen/gitim/issues"
-	},
-	"homepage": "https://github.com/ErikBoesen/gitim#readme",
-	"devDependencies": {
-		"electron-prebuilt": "^0.36.0"
-	}
+  "name": "gitim",
+  "version": "0.1",
+  "description": "A minimal, lightweight git client.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikBoesen/gitim.git"
+  },
+  "keywords": [
+    "gitim",
+    "git",
+    "git client",
+    "github"
+  ],
+  "author": "ErikBoesen",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/ErikBoesen/gitim/issues"
+  },
+  "homepage": "https://github.com/ErikBoesen/gitim#readme",
+  "devDependencies": {
+    "asar": "^0.10.0",
+    "electron-prebuilt": "^0.36.9",
+    "fs-jetpack": "^0.7.1",
+    "q": "^1.4.1",
+    "rcedit": "^0.4.0"
+  }
 }
