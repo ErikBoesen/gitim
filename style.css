@@ -13,9 +13,28 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.user {
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+img,
+p {
+    display: inline-block;
+}
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+p {
+    color: grey;
+}
 input,
 button {
-    height: 25vh;
     font-size: 1em;
     font: inherit;
     border: 0;
@@ -29,44 +48,59 @@ input {
     background: white;
     padding: 0 10px;
     display: block;
+    height: 20vh;
 }
 #message {
     position: absolute;
     z-index: -10;
-    top: 50vh;
+    top: 75vh;
     width: 60vw;
     right: 20vw;
 }
 button {
     color: white;
     width: 50vw;
+    height: 25vh;
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    transition: .5s ease-out;
+    transition: .2s ease-out;
 }
 button.active {
-    transition: .5s ease-out;
+    transition: .2s ease-out;
 }
 button#commit {
     background: #03A9F4;
-    top: 50vh;
+    top: 75vh;
     right: 0;
     z-index: 5;
 }
 button#commit.active {
     width: 20vw;
 }
-button#pull {
+button#pull,
+button#cancel {
     background: #4CAF50;
-    top: 50vh;
+    top: 75vh;
     left: 0;
 }
-button#pull.active {
+button#cancel {
+    opacity: 0;
+}
+button#pull {
+    opacity: 1;
+}
+button#pull.active,
+button#cancel.active {
     left: 0;
     right: 90vw;
     width: 20vw;
     background: #ddd;
     color: black;
-    content: 'Cancel';
+}
+button#cancel.active {
+    opacity: 1;
+}
+button#pull.active {
+    opacity: 0;
 }
