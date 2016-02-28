@@ -2,105 +2,41 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: local('Roboto Light'), local('Roboto-Light'), url(Roboto.woff2) format('woff2');
+    src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
     unicode-range: U+0000-00FF;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body {
+    height: 100%;
 }
 body {
     font-family: 'Roboto', sans-serif;
-}
-.user {
-    height: 35vh;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-img,
-p {
-    display: inline-block;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 5px;
+    width: 200px;
+    height: 200px;
+}
+h1, p {
+    color: #333;
+    margin: 0;
+}
+h1 {
+    font-size: 4em;
+    margin-top: 20px;
 }
 p {
-    color: grey;
+    font-size: 1.5em;
+    margin: 20px;
 }
-input,
-button {
-    font-size: 1em;
-    font: inherit;
-    border: 0;
-}
-input:focus,
-button:focus {
-    outline: 0;
-}
-input {
-    width: 100vw;
-    background: white;
-    padding: 0 10px;
-    display: block;
-    height: 20vh;
-}
-#message {
-    position: absolute;
-    z-index: -10;
-    top: 75vh;
-    width: 60vw;
-    right: 20vw;
-}
-button {
+a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #266fdb;
     color: white;
-    width: 50vw;
-    height: 25vh;
-    display: inline-block;
-    cursor: pointer;
-    position: absolute;
-    transition: .2s ease-out;
-}
-button.active {
-    transition: .2s ease-out;
-}
-button#commit {
-    background: #03A9F4;
-    top: 75vh;
-    right: 0;
-    z-index: 5;
-}
-button#commit.active {
-    width: 20vw;
-}
-button#pull,
-button#cancel {
-    background: #4CAF50;
-    top: 75vh;
-    left: 0;
-}
-button#cancel {
-    opacity: 0;
-}
-button#pull {
-    opacity: 1;
-}
-button#pull.active,
-button#cancel.active {
-    left: 0;
-    right: 90vw;
-    width: 20vw;
-    background: #ddd;
-    color: black;
-}
-button#cancel.active {
-    opacity: 1;
-}
-button#pull.active {
-    opacity: 0;
 }
