@@ -8,16 +8,23 @@
 </head>
 
 <body>
-    <div class="user">
-        <img src="https://avatars1.githubusercontent.com/u/5923662">
-        <p>username</p>
+    <div id="sign-in-section">
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="password" placeholder="Password">
+        <button id="login">Sign in</button>
     </div>
-    <input type="text" id="url" placeholder="Repo URL" value="github.com/name/repository">
-    <input type="text" id="path" placeholder="Path" value="~/Desktop/repository">
-    <input type="text" id="message" placeholder="Type commit message:">
-    <button id="commit">Commit</button>
-    <button id="pull">Pull</button>
-    <button id="cancel">Cancel</button>
+    <div class="primary">
+        <div class="user">
+            <img src="https://avatars1.githubusercontent.com/u/5923662">
+            <p>username</p>
+        </div>
+        <input type="text" id="url" placeholder="Repo URL" value="github.com/name/repository">
+        <input type="text" id="path" placeholder="Path" value="~/Desktop/repository">
+        <input type="text" id="message" placeholder="Type commit message:">
+        <button id="commit">Commit</button>
+        <button id="pull">Pull</button>
+        <button id="cancel">Cancel</button>
+    </div>
     <script src="scripts.js"></script>
 </body>
 

@@ -55,6 +55,7 @@ input {
     z-index: -10;
     top: 75vh;
     width: 60vw;
+    height: 25vh;
     right: 20vw;
 }
 button {
@@ -69,38 +70,58 @@ button {
 button.active {
     transition: .2s ease-out;
 }
-button#commit {
+#commit {
     background: #03A9F4;
     top: 75vh;
     right: 0;
     z-index: 5;
 }
-button#commit.active {
+#commit.active {
     width: 20vw;
 }
-button#pull,
-button#cancel {
+#pull,
+#cancel {
     background: #4CAF50;
     top: 75vh;
     left: 0;
 }
-button#cancel {
+#cancel {
     opacity: 0;
 }
-button#pull {
+#pull {
     opacity: 1;
 }
-button#pull.active,
-button#cancel.active {
+#pull.active,
+#cancel.active {
     left: 0;
     right: 90vw;
     width: 20vw;
     background: #ddd;
     color: black;
 }
-button#cancel.active {
+#cancel.active {
     opacity: 1;
 }
-button#pull.active {
+#pull.active {
     opacity: 0;
+}
+#sign-in-section {
+    /* Debug */
+    z-index: 1000;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    position: absolute;
+    /* / Debug */
+    padding: 10vh 25vw 0;
+}
+#sign-in-section input {
+    width: 50vw;
+    height: 25vh;
+}
+#login {
+    margin-top: 5px;
+    background: #03A9F4;
+    border-radius: 25vh;
 }
