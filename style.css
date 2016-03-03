@@ -105,23 +105,3 @@ button.active {
 #pull.active {
     opacity: 0;
 }
-#sign-in-section {
-    /* Debug */
-    z-index: 1000;
-    background: white;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    position: absolute;
-    /* / Debug */
-    padding: 10vh 25vw 0;
-}
-#sign-in-section input {
-    width: 50vw;
-    height: 25vh;
-}
-#login {
-    margin-top: 5px;
-    background: #03A9F4;
-    border-radius: 25vh;
-}

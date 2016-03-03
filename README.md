@@ -1,9 +1,17 @@
-# ![gitim logo](logo.png)
+# ![Gitim logo](logo.png)
 
-Extremely light and minimal Git client.
+Gitim is an extremely light and minimal Git client.
 
 ## Installation
-¯\\\_(ツ)\_/¯
+* Since Gitim is not get finished, you'll need to build it yourself from the source code.
+
+#### Source dependencies
+* [git](https://git-scm.com/downloads)
+* [node.js](https://nodejs.org/en/download)
+* electron (`npm install electron-prebuilt`)
+* NodeGit (`npm install nodegit`)
+
+To launch, cd into the Gitim folder and run `electron .` (note the period at the end).
 
 ## Authors
 * [Erik Boesen](https://github.com/ErikBoesen)
