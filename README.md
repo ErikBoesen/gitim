@@ -18,4 +18,4 @@ To launch, cd into the Gitim folder and run `electron .` (note the period at the
 * Logo by [James Fenn](https://github.com/TheAndroidMaster).
 
 ## License
-This code is public domain under the CC0 license. Do whatever you want with it. I'd prefer if you give me credit, but you don't necessarily _have_ to.
+This code is offered under the MIT license.

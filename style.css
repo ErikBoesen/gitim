@@ -13,7 +13,18 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-.user {
+section {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+.sign-in {
+    display: block;
+}
+.main {
+    display: none;
+}
+.header {
     height: 35vh;
     display: flex;
     flex-direction: row;
@@ -28,7 +39,7 @@ img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 p {
     color: grey;
@@ -58,7 +69,7 @@ input {
     height: 25vh;
     right: 20vw;
 }
-button {
+button, input[type="submit"] {
     color: white;
     width: 50vw;
     height: 25vh;
@@ -69,6 +80,11 @@ button {
 }
 button.active {
     transition: .2s ease-out;
+}
+#login {
+    bottom: 0;
+    width: 100vw;
+    background: #03A9F4;
 }
 #commit {
     background: #03A9F4;

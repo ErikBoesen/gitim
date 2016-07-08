@@ -8,16 +8,27 @@
 </head>
 
 <body>
-    <div class="user">
-        <img src="https://avatars1.githubusercontent.com/u/5923662">
-        <p>username</p>
-    </div>
-    <input type="text" id="url" placeholder="Repo URL" value="github.com/name/repository">
-    <input type="text" id="path" placeholder="Path" value="~/Desktop/repository">
-    <input type="text" id="message" placeholder="Type commit message:">
-    <button id="commit">Commit</button>
-    <button id="pull">Pull</button>
-    <button id="cancel">Cancel</button>
+    <section class="sign-in">
+        <div class="header">
+            <img src="user.png">
+            <p>Sign in</p>
+        </div>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login">Log in</button>
+    </section>
+    <section class="main">
+        <div class="header">
+            <img src="user.png" id="avatar">
+            <p id="avatarLabel">Unknown user</p>
+        </div>
+        <input type="text" id="url" placeholder="Repo URL (ex: https://github.com/ErikBoesen/gitim)">
+        <input type="text" id="path" placeholder="Path (ex: /Desktop/repository)">
+        <input type="text" id="message" placeholder="Type commit message:">
+        <button id="commit">Commit</button>
+        <button id="pull">Pull</button>
+        <button id="cancel">Cancel</button>
+    </section>
     <script src="scripts.js"></script>
 </body>
 
