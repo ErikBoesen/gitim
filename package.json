@@ -4,18 +4,12 @@
   "description": "A minimal, lightweight git client.",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ErikBoesen/gitim.git"
   },
-  "keywords": [
-    "gitim",
-    "git",
-    "git client",
-    "github"
-  ],
   "author": "ErikBoesen",
   "license": "MIT",
   "bugs": {
@@ -24,6 +18,6 @@
   "homepage": "https://github.com/ErikBoesen/gitim#readme",
   "devDependencies": {
     "electron-prebuilt": "^1.2.0",
-    "github": "^2.0.0"
+    "simple-git": "^1.43.0"
   }
 }

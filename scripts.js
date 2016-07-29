@@ -1,4 +1,5 @@
-var github = require('github');
+const fs = require('fs');
+const git = require('simple-git')();
 
 var committing = false;
 
@@ -23,11 +24,7 @@ var controls = {
 
 
 controls.login.onclick = function() {
-	/*github.authenticate({
-		type: 'basic',
-		username: controls.username.value,
-		password: controls.password.value
-	});*/
+
 	if (controls.username.value && controls.password.value) {
 		controls.signIn.style.display = 'none';
 		controls.main.style.display = 'block';
@@ -43,7 +40,7 @@ controls.login.onclick = function() {
 
 controls.commit.onclick = function() {
 	if (committing) {
-        github.gitdata.createCommit(controls.username.value, controls.url.value, controls.message.value);
+		github.gitdata.createCommit(controls.username.value, controls.url.value, controls.message.value);
 	} else if (controls.url.value && controls.path.value) {
 		controls.commit.innerHTML = 'Push';
 		controls.commit.className = 'active';
@@ -59,4 +56,15 @@ controls.cancel.onclick = function() {
 	controls.pull.className = '';
 	controls.cancel.className = '';
 	committing = false;
+};
+// TODO: This doesn't trigger for some reason.
+controls.pull.onclick = function() {
+    console.log('test');
+	if (fs.accessSync(controls.path.value) == undefined) {
+        console.log('It"s there');
+        git.pull();
+    } else {
+        console.log('Not there');
+        git.clone(controls.url.value, controls.path.value);
+    }
 };
