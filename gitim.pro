@@ -10,7 +10,6 @@ QT += gui widgets
 
 # Input
 HEADERS += main.h
-SOURCES += main.cpp
-
-FORMS += \
-    frame.ui
+SOURCES += \
+    login.cpp \
+    main.cpp

@@ -3,18 +3,32 @@
 #include <QApplication>
 #include <QWidget>
 #include <QPushButton>
-#include <QPixmap>
-#include <QIcon>
 #include <QLineEdit>
-#include <QComboBox>
 #include <QLabel>
 #include <QGridLayout>
-#include <cmath>
 
-class Window : public QWidget {
+
+class MainWindow : public QWidget {
 
     public:
-        Window(QWidget *parent = 0);
+        MainWindow(QWidget *parent = 0);
+
+    private slots:
+        void Login();
+
+    private:
+        QLineEdit *textboxPath;
+        QLineEdit *textboxURL;
+        QPushButton *btnPull;
+        QPushButton *btnCommit;
+        QLineEdit *textboxCommit;
+        QPushButton *btnPush;
+};
+
+class LoginWindow : public QWidget {
+
+    public:
+        LoginWindow(QWidget *parent = 0);
 
     private slots:
         void Login();
